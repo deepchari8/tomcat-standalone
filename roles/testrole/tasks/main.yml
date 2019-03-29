@@ -3,6 +3,9 @@
   copy:
     src: jboss-helloworld.war
     dest: /opt/apache-tomcat-7.0.61/webapps/jboss-helloworld.war
+    owner: user1
+    group: wheel
+    mode: 777
 
 - name: Deploy Ticket Monster to Tomcat
   copy:
