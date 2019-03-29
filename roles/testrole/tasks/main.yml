@@ -3,17 +3,13 @@
   copy:
     src: jboss-helloworld.war
     dest: /opt/apache-tomcat-7.0.61/webapps/jboss-helloworld.war
-    owner: user1
-    group: wheel
-    mode: 0644
+
 
 - name: Deploy Ticket Monster to Tomcat
   copy:
     src: ticket-monster.war
     dest: /opt/apache-tomcat-7.0.61/webapps/ticket-monster.war
-    owner: user1
-    group: wheel
-    mode: 0644
+
 
 - name: Restart Tomcat
   service: name=tomcat state=restarted
