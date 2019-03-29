@@ -8,6 +8,9 @@
   copy:
     src: ticket-monster.war
     dest: /opt/apache-tomcat-7.0.61/webapps/ticket-monster.war
+    owner: user1
+    group: wheel
+    mode: 777
 
 - name: Restart Tomcat
   service: name=tomcat state=restarted
